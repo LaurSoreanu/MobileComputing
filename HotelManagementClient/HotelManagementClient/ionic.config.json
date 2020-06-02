@@ -1,0 +1,7 @@
+{
+  "name": "HotelManagementClient",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

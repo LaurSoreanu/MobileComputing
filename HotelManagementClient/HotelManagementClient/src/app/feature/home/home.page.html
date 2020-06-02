@@ -1,0 +1,17 @@
+<app-header [title]="'Hotel Management'">
+</app-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let hotel of hotels">
+      <ion-thumbnail  slot="start">
+        <ion-img [src]="'data:image/JPEG;base64,' + hotel.img"></ion-img>
+      </ion-thumbnail>
+      <ion-label>
+        <h2>{{hotel.name}}</h2>
+        <p>{{hotel.description}}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

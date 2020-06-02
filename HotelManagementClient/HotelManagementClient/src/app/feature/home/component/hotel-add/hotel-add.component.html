@@ -1,0 +1,27 @@
+<!-- <form asp-action="UploadImage" 
+      asp-controller="Home" 
+      method="post" 
+      enctype="multipart/form-data">
+    <input type="file" id="file1" 
+           name="file1" 
+           multiple="multiple" />
+    <button type="submit">Upload File(s)</button>
+</form> -->
+
+<ion-grid>
+  <ion-row justify-content-center>
+    <ion-col align-self-center>
+      <form padding [formGroup]="formGroup">
+        <ion-item>
+        <ion-input type="file" formControlName="img"></ion-input>
+        </ion-item>
+      </form>
+      
+      <div padding>
+        <ion-button (click)="submit()">Upload</ion-button>
+      </div>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+
